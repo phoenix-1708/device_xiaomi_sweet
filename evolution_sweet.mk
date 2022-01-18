@@ -5,10 +5,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
-# Inherit common Arcana configurations
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit common Evolution configurations
+$(call inherit-product, vendor/evolution/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_sweet
+PRODUCT_NAME := evolution_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10 Pro
@@ -16,9 +16,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-ARCANA_OFFICIAL := true
-ARCANA_DEVICE := sweet
-ARCANA_MAINTAINER := Hari @makhk
+EVOLUTION_OFFICIAL := true
+EVOLUTION_DEVICE := sweet
+EVOLUTION_MAINTAINER := Harikumar
 TARGET_SUPPORTS_BLUR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
